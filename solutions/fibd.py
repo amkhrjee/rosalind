@@ -11,8 +11,10 @@ while k < n:
         # rabbits haven't died off yet
         fseq.append(fseq[-1] + fseq[-2])
     elif k == m:
+        # the original pair dies (1 pair dies)
         fseq.append(fseq[-1] + fseq[-2] - 1)
     else:
+        # everyone born more than m months ago dies
         fseq.append(fseq[-1] + fseq[-2] - fseq[-(m + 1)])
     k += 1
 
