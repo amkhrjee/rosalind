@@ -1,7 +1,7 @@
 import itertools
 import math
 
-n = 3
+n = 7
 
 print(math.factorial(n))
 
